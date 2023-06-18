@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог интернет магазина device</title>
+  <link rel="stylesheet" href="style-catalog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&family=Rubik:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="header__cup">
+      <h1 class="visually-hidden">Магазин умной техники device</h1>
+      <a class="header__logo-link" href="index.html">
+        <img class="header__logo-img" src="images/logo.png" alt="Логотип магазина" heigth="40" width="149" id="logo">
+      </a>
+      <div class="header__cup-container">
+        <form class="search" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="search__input" type="text" name="search" value="Поиск по сайту">
+          <input class="search__buttom" type="submit" name="search-buttom" value="Найти">
+        </form>
+        <button class="button__entry" type="button">Выйти</button>
+        <button class="button__compare" type="button">Сравнить</button>
+        <div class="basket">
+          <button class="basket__button" type="button">Корзина</button>
+          <!--  <div class="basket__product">
+            <table class="basket__product-list">
+              <tr class="basket__product-item">
+                <td class="basket__product-item-column-img">
+                  <img class="basket__product-item-img" src="images/product-1-small.png" alt="Картинка товара добавленного в корзину" width="39" height="43">
+                </td>
+                <td class="basket__product-item-column-name">
+                  <span class="basket__product-item-name">Любительская селфи-палка</span>
+                </td>
+                <td class="basket__product-item-column-delete">
+                  <button class="basket__product-item-delete" type="button" name="delete-product" value="удалить товар">Удалить товар</button>
+                </td>
+              </tr>
+              <tr class="basket__product-item">
+                <td class="basket__product-item-column-img">
+                  <img class="basket__product-item-img" src="images/product-2-small.png" alt="Картинка товара добавленного в корзину" width="39" height="43">
+                </td>
+                <td class="basket__product-item-column-name">
+                  <span class="basket__product-item-name">Профессиональная селфи-палка</span>
+                </td>
+                <td class="basket__product-item-column-delete">
+                  <button class="basket__product-item-delete" type="button" name="delete-product" value="удалить товар">Удалить товар</button>
+                </td>
+              </tr>
+              <tfoot>
+                <td>Товар: <span class="basket__product-item-lot">2</span></td>
+                <td>Сумма: <span class="basket__product-item-sum">2000</span> &#8381</td>
+              </tfoot>
+            </table>
+            <a class="basket__product-link" href="#">Открыть карзину</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="header__footer">
+      <div class="catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <button class="catalog__button" type="button">Каталог товаров</button>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <ul class="catalog__camera">
+              <li class="catalog__camera-item"><a class="catalog__link" href="vert-real.html">Виртуальная реальность</a>
+              </li>
+              <li class="catalog__camera-item"><a class="catalog__link" href="mono-self.html">Моноподы для селфи</a>
+              </li>
+              <li class="catalog__camera-item"><a class="catalog__link" href="camera.html">Экшн-камеры</a></li>
+            </ul>
+          </li>
+          <li class="catalog__item">
+            <ul class="catalog__watch">
+              <li class="catalog__watch-item"><a class="catalog__link" href="fit.html">Фитнес-браслеты</a></li>
+              <li class="catalog__watch-item"><a class="catalog__link" href="watch.html">Умные часы</a></li>
+            </ul>
+          </li>
+          <li class="catalog__item">
+            <ul class="catalog__drone">
+              <li class="catalog__drone-item"><a class="catalog__link" href="drone.html">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <ul class="services">
+        <li class="services__item"><a class="services__link" href="blank.html">Доставка</a></li>
+        <li class="services__item"><a class="services__link" href="#">Гарантия</a></li>
+        <li class="services__item"><a class="services__link" href="#">Контакты</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__cap">
+      <h2 class="caption">Моноподы для селфи</h2>
+      <ul class="path__list">
+        <li class="path__item path__item-home"><a class="path__item-link" href="index.html">Главная</a></li>
+        <li class="path__item"><a class="path__item-link" href="#">Каталог товаров</a></li>
+        <li class="path__item"><a class="path__item-link">Моноподы для селфи</a></li>
+      </ul>
+    </div>
+    <section class="monopods">
+      <div class="filter">
+        <h3 class="filter__header">Фильтр:</h3>
+        <form class="filter__menu" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="filter__price">Стоимость:
+            <input class="filter__price-range" type="range" min="0" max="10000" value="5000" id="price"
+              oninput="sizePrice()">
+          </div>
+          <div class="filter__color">
+            <p class="filter__color-header">Цвет</p>
+            <ul class="filter__color-list">
+              <li class="filter__color-item">
+                <input class="filter__color-name-radio" id="color-black" type="radio" name="black" value="color"
+                  checked>
+                <label class="filter__color-name" for="color-black">Черный</label>
+              </li>
+              <li class="filter__color-item">
+                <input class="filter__color-name-radio" id="color-white" type="radio" name="white" value="color"
+                  checked>
+                <label class="filter__color-name" for="color-white">Белый</label>
+              </li>
+              <li class="filter__color-item">
+                <input class="filter__color-name-radio" id="color-blue" type="radio" name="blue" value="color">
+                <label class="filter__color-name" for="color-blue">Синий</label>
+              </li>
+              <li class="filter__color-item">
+                <input class="filter__color-name-radio" id="color-red" type="radio" name="red" value="color">
+                <label class="filter__color-name" for="color-red">Красный</label>
+              </li>
+              <li class="filter__color-item">
+                <input class="filter__color-name-radio" id="color-pink" type="radio" name="pink" value="color">
+                <label class="filter__color-name" for="color-pink">Розовый</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__bluetooth">
+            <p class="filter__bluetooth-text">Bluetooth</p>
+            <ul class="filter__bluetooth-list">
+              <li class="filter__bluetooth-item">
+                <input class="filter__bluetooth-existence-radio" type="radio" value="there is" id="bluetooth-on"
+                  name="Bluetooth" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+                <label class="filter__bluetooth-existence" for="bluetooth-on">Есть </label>
+              </li>
+              <li class="filter__bluetooth-item">
+                <input class="filter__bluetooth-existence-radio" type="radio" value="not" id="bluetooth-off"
+                  name="Bluetooth" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+                <label class="filter__bluetooth-existence" for="bluetooth-off">Нет </label>
+              </li>
+            </ul>
+          </div>
+          <input class="filter__buttom" type="submit" value="показать">
+        </form>
+      </div>
+
+      <div class="catalogue">
+        <div class="catalogue__cap">
+          <h3 class="catalogue__cap-header">Сортировка:</h3>
+          <select class="sorting">
+            <option class="sorting__option" value="popular">Популярные</option>
+          </select>
+          <button class="catalogue__cap-button catalogue__cap-button-ascending" type="button">По возрастанию</button>
+          <button class="catalogue__cap-button catalogue__cap-button-descending" type="button">По убыванию</button>
+        </div>
+        <div class="catalogue__main">
+          <article class="product">
+            <img class="product__pic" src="images/product1.png" width="360" height="380" alt="Селифи палка с закрепленном на ней телефоном">
+            <a class="product__link" href="#">Подробнее</a>
+            <p class="product__name">Любительская<br>селфи-палка</p>
+            <p class="product__price">500 &#8381;</p>
+
+          </article>
+          <article class="product">
+            <img class="product__pic" src="images/product-2.png" width="360" height="380" alt="Селифи палка с в сложенном состоянии и синей кнопкой">
+            <a class="product__link" href="#">Подробнее</a>
+            <p class="product__name">Профессиональная<br>селфи-палка</p>
+            <p class="product__price">1 500 &#8381;</p>
+          </article>
+          <article class="product">
+            <img class="product__pic" src="images/product-3.png" width="360" height="380" alt="Короткая селифи палка, с толстой прорезиненной рукояткой желтого цыета и закрепленной на ней камерой">
+            <a class="product__link" href="#">Подробнее</a>
+            <p class="product__name">Непотопляемая<br>селфи-палка</p>
+            <p class="product__price">2 500 &#8381;</p>
+          </article>
+          <article class="product new">
+            <img class="product__pic" src="images/product-4.png" width="360" height="380" alt="Селифи палка в виде человеческой руки">
+            <a class="product__link" href="#">Подробнее</a>
+            <p class="product__name">Селифи-палка &laquo;Следуй за<br>мной&raquo;</p>
+            <p class="product__price">1 500 &#8381;</p>
+          </article>
+          <button class="catalogue__download-button" type="button">Загрузить еще</button>
+          <div class="page">
+            <ul class="page-list">
+              <li class="page__number">
+                <a class="page__number-link page__number-link-now">1</a>
+              </li>
+              <li class="page__number">
+                <a class="page__number-link" href="#">2</a>
+              </li>
+              <li class="page__number">
+                <a class="page__number-link" href="#">3</a>
+              </li>
+              <li class="page__number">
+                <span class="page__number-link">...</span>
+              </li>
+              <li class="page__number">
+                <a class="page__number-link" href="#">15</a>
+              </li>
+            </ul>
+            <button type="button" class="page__button page-back">Назад</button>
+            <button type="button" class="page__button page-forward">Вперед</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__cup">
+      <h2 class="footer__logo">
+        <a class="footer__logo-link" href="#logo">
+          <img class="footer__logo-img" src="images/logo-yellow.svg"
+            alt="Логотип нашего магазина напечатанный желтым цветом" width="145" height="36">
+        </a>
+      </h2>
+      <div class="footer__content">
+        <p class="footer__content-adress">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
+        <ul class="footer__content-services">
+          <li class="footer__content-services-item"><a class="footer__content-services-link"
+              href="blank.html">Доставка</a></li>
+          <li class="footer__content-services-item"><a class="footer__content-services-link" href="#">Гарантия</a></li>
+          <li class="footer__content-services-item"><a class="footer__content-services-link" href="#">Контакты</a></li>
+        </ul>
+        <p class="footer__content-phone"><a class="footer__content-phone-link" href="tel:+78128121212">Тел: +7 (812)
+            812-12-12</a></p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <img class="footer__bottom-img" alt="Желтая линия" src="images/yellow-line.svg">
+      <ul class="footer__bottom-mеssenger">
+        <li class="footer__bottom-mеssenger-item">
+          <a class="footer__bottom-mеssenger-link facebook" href="https://vk.com/stnkvld">Facebook</a>
+        </li>
+        <li class="footer__bottom-mеssenger-item">
+          <a class="footer__bottom-mеssenger-link instagrem" href="https://vk.com/stnkvld">Insagram</a>
+        </li>
+        <li class="footer__bottom-mеssenger-item">
+          <a class="footer__bottom-mеssenger-link twitter" href="https://vk.com/stnkvld">Twitter</a>
+        </li>
+      </ul>
+      <a class="footer__bottom-executor" href="https://htmlacademy.ru">
+        html.academy
+      </a>
+      </p>
+    </div>
+  </footer>
+</body>
