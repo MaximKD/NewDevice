@@ -33,83 +33,80 @@
     <div class="header__cup">
       <h1 class="visually-hidden">Магазин умной техники device</h1>
       <a class="header__logo-link" href="index.html">
-        <img class="header__logo-img" src="images/logo.png" alt="Логотип магазина" heigth="40" width="149" id="logo">
+        <img class="header__logo-img" src="images/logo.svg" alt="Логотип магазина" heigth="36" width="145" id="logo">
       </a>
       <div class="header__cup-container">
         <form class="search" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="search__input" type="text" name="search" value="Поиск по сайту">
-          <input class="search__buttom" type="submit" name="search-buttom" value="Найти">
+          <input class="search__input" type="text" name="search" placeholder="Поиск по сайту">
+          <button class="search__button" type="submit">Найти</button>
         </form>
-        <button class="button__entry" type="button">Выйти</button>
-        <button class="button__compare" type="button">Сравнить</button>
-        <div class="basket">
-          <button class="basket__button" type="button">Корзина</button>
-          <!--  <div class="basket__product">
-            <table class="basket__product-list">
-              <tr class="basket__product-item">
-                <td class="basket__product-item-column-img">
-                  <img class="basket__product-item-img" src="images/product-1-small.png" alt="Картинка товара добавленного в корзину" width="39" height="43">
-                </td>
-                <td class="basket__product-item-column-name">
-                  <span class="basket__product-item-name">Любительская селфи-палка</span>
-                </td>
-                <td class="basket__product-item-column-delete">
-                  <button class="basket__product-item-delete" type="button" name="delete-product" value="удалить товар">Удалить товар</button>
-                </td>
-              </tr>
-              <tr class="basket__product-item">
-                <td class="basket__product-item-column-img">
-                  <img class="basket__product-item-img" src="images/product-2-small.png" alt="Картинка товара добавленного в корзину" width="39" height="43">
-                </td>
-                <td class="basket__product-item-column-name">
-                  <span class="basket__product-item-name">Профессиональная селфи-палка</span>
-                </td>
-                <td class="basket__product-item-column-delete">
-                  <button class="basket__product-item-delete" type="button" name="delete-product" value="удалить товар">Удалить товар</button>
-                </td>
-              </tr>
-              <tfoot>
-                <td>Товар: <span class="basket__product-item-lot">2</span></td>
-                <td>Сумма: <span class="basket__product-item-sum">2000</span> &#8381</td>
-              </tfoot>
-            </table>
-            <a class="basket__product-link" href="#">Открыть карзину</a>
-          </div> -->
-        </div>
+        <ul class="header__cup-button">
+          <li class="header__cup-button-entry">
+            <a class="header__cup-button-entry-link" href="#">Выйти</a>
+          </li>
+          <li class="header__cup-button-compare">
+            <a class="header__cup-button-compare-link" href="#">Сравнить</a>
+          </li>
+          <li class="header__cup-button-basket">
+            <button class="button__basket" type="button">Корзина</button>
+            <span class="visually-hidden">Колиичество товара в корзине:</span><span
+              class="button__basket-value-order">2</span>
+            <div class="basket">
+              <ul class="basket-list">
+                <li class="basket__order">
+                  <a class="basket__order-name" href="blank.html">Любительская<br>селфи-палка</a>
+                  <img class="basket__orde-picture" src="images/small__like_salf1.png" width="39" height="43"
+                    alt="Уменьшенная картинка любительской селфи палки">
+                  <button class="basket__order-delete">Удалить</button>
+                </li>
+                <li class="basket__order">
+                  <a class="basket__order-name" href="blank.html">Профессиональная селфи-палка</a>
+                  <img class="basket__orde-picture" src="images/small_pro_salf1.png" width="39" height="43"
+                    alt="Уменьшенная картинка любительской селфи палки">
+                  <button class="basket__order-delete">Удалить</button>
+                </li>
+              </ul>
+              <div class="basket__order-total">
+                <p class="basket__order-total-value">Товаров:<span class="total-value"> 2</span></p>
+                <p class="basket__order-total-price">Сумма:<span class="total-price"> 2000 </span>&#8381;</p>
+                <a class="basket__link" href="blank.html">Открыть корзину</a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
 
     <div class="header__footer">
-      <div class="catalog">
-        <h2 class="visually-hidden">Каталог товаров</h2>
-        <button class="catalog__button" type="button">Каталог товаров</button>
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <ul class="catalog__camera">
-              <li class="catalog__camera-item"><a class="catalog__link" href="vert-real.html">Виртуальная реальность</a>
-              </li>
-              <li class="catalog__camera-item"><a class="catalog__link" href="mono-self.html">Моноподы для селфи</a>
-              </li>
-              <li class="catalog__camera-item"><a class="catalog__link" href="camera.html">Экшн-камеры</a></li>
-            </ul>
-          </li>
-          <li class="catalog__item">
-            <ul class="catalog__watch">
-              <li class="catalog__watch-item"><a class="catalog__link" href="fit.html">Фитнес-браслеты</a></li>
-              <li class="catalog__watch-item"><a class="catalog__link" href="watch.html">Умные часы</a></li>
-            </ul>
-          </li>
-          <li class="catalog__item">
-            <ul class="catalog__drone">
-              <li class="catalog__drone-item"><a class="catalog__link" href="drone.html">Квадрокоптеры</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <ul class="services">
-        <li class="services__item"><a class="services__link" href="blank.html">Доставка</a></li>
-        <li class="services__item"><a class="services__link" href="#">Гарантия</a></li>
-        <li class="services__item"><a class="services__link" href="#">Контакты</a></li>
+      <ul class="header__footer-item">
+        <li class="catalog">
+          <a class="catalog__link" href="#">Каталог товаров</a>
+          <ul class="catalog__list">
+            <li class="catalog__items">
+              <ul class="catalog__camera">
+                <li class="catalog__item"><a class="catalog__item-link" href="vert-real.html">Виртуальная реальность</a>
+                </li>
+                <li class="catalog__item"><a class="catalog__item-link" href="mono-self.html">Моноподы для селфи</a>
+                </li>
+                <li class="catalog__item"><a class="catalog__item-link" href="camera.html">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li class="catalog__items">
+              <ul class="catalog__watch">
+                <li class="catalog__item"><a class="catalog__item-link" href="fit.html">Фитнес-браслеты</a></li>
+                <li class="catalog__item"><a class="catalog__item-link" href="watch.html">Умные часы</a></li>
+              </ul>
+            </li>
+            <li class="catalog__items">
+              <ul class="catalog__drone">
+                <li class="catalog__item"><a class="catalog__item-link" href="drone.html">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="services"><a class="services__link" href="blank.html">Доставка</a></li>
+        <li class="services"><a class="services__link" href="#">Гарантия</a></li>
+        <li class="services"><a class="services__link" href="#">Контакты</a></li>
       </ul>
     </div>
   </header>
@@ -126,54 +123,72 @@
     <section class="monopods">
       <div class="filter">
         <h3 class="filter__header">Фильтр:</h3>
-        <form class="filter__menu" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="filter__price">Стоимость:
-            <input class="filter__price-range" type="range" min="0" max="10000" value="5000" id="price"
-              oninput="sizePrice()">
-          </div>
-          <div class="filter__color">
-            <p class="filter__color-header">Цвет</p>
+        <form class="filter__menu" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filter__catalog">
+            <legend class="filter__price">Стоимость:</legend>
+              <div class="scale">
+                <div class="scale__range" style="left: 0px; width: 66%;">
+                  <button class="scale__range-toggle toggle-min">
+                    <span class="visually-hidden">Уменьшить цену</span>
+                  </button>
+                  <button class="scale__range-toggle toggle-max">
+                    <span class="visually-hidden">Увеличить цену</span>
+                  </button>
+                </div>
+                <div class="filter__price-input">
+                  <label class="filter__price-label"> от
+                    <input class="price__range-input" type="number" value="0" name="min-price"
+                    style="width: 15px;"> &#8381;
+                  </label>
+                  <label class="filter__price-label"> до
+                   <input class="price__range-input" type="number" value="5000" name="max-price" style="width: 40px;"> &#8381;
+                  </label>
+              </div>
+          </fieldset>
+
+          <fieldset class="filter__color">
+            <legend class="filter__color-header">Цвет</legend>
             <ul class="filter__color-list">
               <li class="filter__color-item">
-                <input class="filter__color-name-radio" id="color-black" type="radio" name="black" value="color"
+                <input class="filter__color-name-radio" id="color-black" type="checkbox" name="black" value="color"
                   checked>
                 <label class="filter__color-name" for="color-black">Черный</label>
               </li>
               <li class="filter__color-item">
-                <input class="filter__color-name-radio" id="color-white" type="radio" name="white" value="color"
+                <input class="filter__color-name-radio" id="color-white" type="checkbox" name="white" value="color"
                   checked>
                 <label class="filter__color-name" for="color-white">Белый</label>
               </li>
               <li class="filter__color-item">
-                <input class="filter__color-name-radio" id="color-blue" type="radio" name="blue" value="color">
+                <input class="filter__color-name-radio" id="color-blue" type="checkbox" name="blue" value="color">
                 <label class="filter__color-name" for="color-blue">Синий</label>
               </li>
               <li class="filter__color-item">
-                <input class="filter__color-name-radio" id="color-red" type="radio" name="red" value="color">
+                <input class="filter__color-name-radio" id="color-red" type="checkbox" name="red" value="color">
                 <label class="filter__color-name" for="color-red">Красный</label>
               </li>
               <li class="filter__color-item">
-                <input class="filter__color-name-radio" id="color-pink" type="radio" name="pink" value="color">
+                <input class="filter__color-name-radio" id="color-pink" type="checkbox" name="pink" value="color">
                 <label class="filter__color-name" for="color-pink">Розовый</label>
               </li>
             </ul>
-          </div>
-          <div class="filter__bluetooth">
-            <p class="filter__bluetooth-text">Bluetooth</p>
+          </fieldset>
+          <fieldset class="filter__bluetooth">
+            <legend class="filter__bluetooth-text">Bluetooth</legend>
             <ul class="filter__bluetooth-list">
               <li class="filter__bluetooth-item">
                 <input class="filter__bluetooth-existence-radio" type="radio" value="there is" id="bluetooth-on"
-                  name="Bluetooth" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+                  name="Bluetooth" checked>
                 <label class="filter__bluetooth-existence" for="bluetooth-on">Есть </label>
               </li>
               <li class="filter__bluetooth-item">
                 <input class="filter__bluetooth-existence-radio" type="radio" value="not" id="bluetooth-off"
-                  name="Bluetooth" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+                  name="Bluetooth" >
                 <label class="filter__bluetooth-existence" for="bluetooth-off">Нет </label>
               </li>
             </ul>
-          </div>
-          <input class="filter__buttom" type="submit" value="показать">
+          </fieldset>
+          <button class="filter__buttom" type="submit">показать</button>
         </form>
       </div>
 
@@ -188,26 +203,29 @@
         </div>
         <div class="catalogue__main">
           <article class="product">
-            <img class="product__pic" src="images/product1.png" width="360" height="380" alt="Селифи палка с закрепленном на ней телефоном">
+            <img class="product__pic" src="images/product1.png" width="360" height="380"
+              alt="Селифи палка с закрепленном на ней телефоном">
             <a class="product__link" href="#">Подробнее</a>
             <p class="product__name">Любительская<br>селфи-палка</p>
             <p class="product__price">500 &#8381;</p>
-
           </article>
           <article class="product">
-            <img class="product__pic" src="images/product-2.png" width="360" height="380" alt="Селифи палка с в сложенном состоянии и синей кнопкой">
+            <img class="product__pic" src="images/product-2.png" width="360" height="380"
+              alt="Селифи палка с в сложенном состоянии и синей кнопкой">
             <a class="product__link" href="#">Подробнее</a>
             <p class="product__name">Профессиональная<br>селфи-палка</p>
             <p class="product__price">1 500 &#8381;</p>
           </article>
           <article class="product">
-            <img class="product__pic" src="images/product-3.png" width="360" height="380" alt="Короткая селифи палка, с толстой прорезиненной рукояткой желтого цыета и закрепленной на ней камерой">
+            <img class="product__pic" src="images/product-3.png" width="360" height="380"
+              alt="Короткая селифи палка, с толстой прорезиненной рукояткой желтого цыета и закрепленной на ней камерой">
             <a class="product__link" href="#">Подробнее</a>
             <p class="product__name">Непотопляемая<br>селфи-палка</p>
             <p class="product__price">2 500 &#8381;</p>
           </article>
           <article class="product new">
-            <img class="product__pic" src="images/product-4.png" width="360" height="380" alt="Селифи палка в виде человеческой руки">
+            <img class="product__pic" src="images/product-4.png" width="360" height="380"
+              alt="Селифи палка в виде человеческой руки">
             <a class="product__link" href="#">Подробнее</a>
             <p class="product__name">Селифи-палка &laquo;Следуй за<br>мной&raquo;</p>
             <p class="product__price">1 500 &#8381;</p>
@@ -261,7 +279,6 @@
     </div>
 
     <div class="footer__bottom">
-      <img class="footer__bottom-img" alt="Желтая линия" src="images/yellow-line.svg">
       <ul class="footer__bottom-mеssenger">
         <li class="footer__bottom-mеssenger-item">
           <a class="footer__bottom-mеssenger-link facebook" href="https://vk.com/stnkvld">Facebook</a>

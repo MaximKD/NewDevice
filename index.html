@@ -33,89 +33,87 @@
     <div class="header__cup">
       <h1 class="visually-hidden">Магазин умной техники device</h1>
       <a class="header__logo-link" href="#">
-        <img class="header__logo-img" src="images/logo.png" alt="Логотип магазина" heigth="40" width="149" id="logo">
+        <img class="header__logo-img" src="images/logo.svg" alt="Логотип магазина" heigth="36" width="145" id="logo">
       </a>
       <div class="header__cup-container">
         <form class="search" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="search__input" type="text" name="search" value="Поиск по сайту">
-          <input class="search__buttom" type="submit" name="search-buttom" value="Найти">
+          <input class="search__input" type="text" name="search" placeholder="Поиск по сайту">
+          <button class="search__button" type="submit">Найти</button>
         </form>
-        <button class="button__entry" type="button">Войти</button>
-        <button class="button__compare" type="button">Сравнить</button>
-        <div class="basket">
-          <button class="basket__button" type="button">Корзина</button>
-          <!--  <div class="basket__product">
-            <table class="basket__product-list">
-              <tr class="basket__product-item">
-                <td class="basket__product-item-column-img">
-                  <img class="basket__product-item-img" src="images/product-1-small.png" alt="Картинка товара добавленного в корзину" width="39" height="43">
-                </td>
-                <td class="basket__product-item-column-name">
-                  <span class="basket__product-item-name">Любительская селфи-палка</span>
-                </td>
-                <td class="basket__product-item-column-delete">
-                  <button class="basket__product-item-delete" type="button" name="delete-product" value="удалить товар">Удалить товар</button>
-                </td>
-              </tr>
-              <tr class="basket__product-item">
-                <td class="basket__product-item-column-img">
-                  <img class="basket__product-item-img" src="images/product-2-small.png" alt="Картинка товара добавленного в корзину" width="39" height="43">
-                </td>
-                <td class="basket__product-item-column-name">
-                  <span class="basket__product-item-name">Профессиональная селфи-палка</span>
-                </td>
-                <td class="basket__product-item-column-delete">
-                  <button class="basket__product-item-delete" type="button" name="delete-product" value="удалить товар">Удалить товар</button>
-                </td>
-              </tr>
-              <tfoot>
-                <td>Товар: <span class="basket__product-item-lot">2</span></td>
-                <td>Сумма: <span class="basket__product-item-sum">2000</span> &#8381</td>
-              </tfoot>
-            </table>
-            <a class="basket__product-link" href="#">Открыть карзину</a>
-          </div> -->
-        </div>
+        <ul class="header__cup-button">
+          <li class="header__cup-button-entry">
+            <a class="header__cup-button-entry-link" href="#">Войти</a>
+          </li>
+          <li class="header__cup-button-compare">
+            <a class="header__cup-button-compare-link" href="#">Сравнить</a>
+          </li>
+          <li class="header__cup-button-basket">
+            <button class="button__basket" type="button">Корзина</button>
+            <span class="visually-hidden">Колиичество товара в корзине:</span><span
+              class="button__basket-value-order">2</span>
+            <div class="basket">
+              <ul class="basket-list">
+                <li class="basket__order">
+                  <a class="basket__order-name" href="blank.html">Любительская<br>селфи-палка</a>
+                  <img class="basket__orde-picture" src="images/small__like_salf1.png" width="39" height="43"
+                    alt="Уменьшенная картинка любительской селфи палки">
+                  <button class="basket__order-delete">Удалить</button>
+                </li>
+                <li class="basket__order">
+                  <a class="basket__order-name" href="blank.html">Профессиональная селфи-палка</a>
+                  <img class="basket__orde-picture" src="images/small_pro_salf1.png" width="39" height="43"
+                    alt="Уменьшенная картинка любительской селфи палки">
+                  <button class="basket__order-delete">Удалить</button>
+                </li>
+              </ul>
+              <div class="basket__order-total">
+                <p class="basket__order-total-value">Товаров:<span class="total-value"> 2</span></p>
+                <p class="basket__order-total-price">Сумма:<span class="total-price"> 2000 </span>&#8381;</p>
+                <a class="basket__link" href="blank.html">Открыть корзину</a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
 
     <div class="header__footer">
-      <div class="catalog">
-        <h2 class="visually-hidden">Каталог товаров</h2>
-        <button class="catalog__button" type="button">Каталог товаров</button>
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <ul class="catalog__camera">
-              <li class="catalog__camera-item"><a class="catalog__link" href="vert-real.html">Виртуальная реальность</a>
-              </li>
-              <li class="catalog__camera-item"><a class="catalog__link" href="mono-self.html">Моноподы для селфи</a>
-              </li>
-              <li class="catalog__camera-item"><a class="catalog__link" href="camera.html">Экшн-камеры</a></li>
-            </ul>
-          </li>
-          <li class="catalog__item">
-            <ul class="catalog__watch">
-              <li class="catalog__watch-item"><a class="catalog__link" href="fit.html">Фитнес-браслеты</a></li>
-              <li class="catalog__watch-item"><a class="catalog__link" href="watch.html">Умные часы</a></li>
-            </ul>
-          </li>
-          <li class="catalog__item">
-            <ul class="catalog__drone">
-              <li class="catalog__drone-item"><a class="catalog__link" href="drone.html">Квадрокоптеры</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <ul class="services">
-        <li class="services__item"><a class="services__link" href="blank.html">Доставка</a></li>
-        <li class="services__item"><a class="services__link" href="#">Гарантия</a></li>
-        <li class="services__item"><a class="services__link" href="#">Контакты</a></li>
+      <ul class="header__footer-item">
+        <li class="catalog">
+          <a class="catalog__link" href="#">Каталог товаров</a>
+          <ul class="catalog__list">
+            <li class="catalog__items">
+              <ul class="catalog__camera">
+                <li class="catalog__item"><a class="catalog__item-link" href="vert-real.html">Виртуальная реальность</a>
+                </li>
+                <li class="catalog__item"><a class="catalog__item-link" href="mono-self.html">Моноподы для селфи</a>
+                </li>
+                <li class="catalog__item"><a class="catalog__item-link" href="camera.html">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li class="catalog__items">
+              <ul class="catalog__watch">
+                <li class="catalog__item"><a class="catalog__item-link" href="fit.html">Фитнес-браслеты</a></li>
+                <li class="catalog__item"><a class="catalog__item-link" href="watch.html">Умные часы</a></li>
+              </ul>
+            </li>
+            <li class="catalog__items">
+              <ul class="catalog__drone">
+                <li class="catalog__item"><a class="catalog__item-link" href="drone.html">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="services"><a class="services__link" href="blank.html">Доставка</a></li>
+        <li class="services"><a class="services__link" href="#">Гарантия</a></li>
+        <li class="services"><a class="services__link" href="#">Контакты</a></li>
       </ul>
     </div>
   </header>
 
   <main class="main">
     <section class="slider">
+      <h2 class="visually-hidden">Хит продаж</h2>
       <ul class="slider__list">
         <li class="slider__item slider__quadrocopter" id="slider-1">
           <figure class="slider__1">
@@ -130,16 +128,16 @@
           <p class="slider__button-info">
             <a class="slider__button-link" href="#">Подробнее</a>
           </p>
-          <div class="slider__specifications">
-            <dl class="slider__specifications-info">
+          <dl class="slider__specifications">
+            <div class="slider__specifications-info">
               <dt>Дальность полета</dt>
               <dd>800 м</dd>
-            </dl>
-            <dl class="slider__specifications-info">
+            </div>
+            <div class="slider__specifications-info">
               <dt>Радиус поражения</dt>
               <dd>50 м</dd>
-            </dl>
-          </div>
+            </div>
+          </dl>
         </li>
         <li class="slider__item slider__fitness-bend" id="slider-2">
           <figure class="slider__2">
@@ -186,16 +184,20 @@
           </div>
         </li>
       </ul>
-      <div class="slider__choice">
-        <label class="slider__choice-1"><input type="radio" name="slider" checked></label>
-        <label class="slider__choice-2"><input type="radio" name="slider"></label>
-        <label class="slider__choice-3"><input type="radio" name="slider"></label>
+      <div class="slider__choice-container">
+        <input class="slider__choice-input" type="radio" name="slider" id="slider__choice-1" checked>
+        <label class="slider__choice" for="slider__choice-1"></label>
+        <input class="slider__choice-input" type="radio" name="slider" id="slider__choice-2">
+        <label class="slider__choice" for="slider__choice-2"></label>
+        <input class="slider__choice-input" type="radio" name="slider" id="slider__choice-3">
+        <label class="slider__choice" for="slider__choice-3"></label>
       </div>
       <button class="slider__button-next" type="button">Вперед</button>
       <button class="slider__button-previous" type="button">Назад</button>
     </section>
 
     <nav class="navigation">
+      <h2 class="visually-hidden">Нас ассортимент</h2>
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link" href="#">
@@ -242,6 +244,7 @@
     </nav>
 
     <section class="service">
+      <h2 class="visually-hidden">Сервисы</h2>
       <div class="service__container-button">
         <button class="service__button button__delivery" type="button"><span
             class="service__button-name">Доставка</span></button>
@@ -284,12 +287,60 @@
       </div>
     </section>
 
-    <div class="delivery__order">
+    <section class="delivery__order">
       <a class="delivery__order-link" href="#">Доставим редкий товар под заказ</a>
-    </div>
+      <button class="delivery__order-button" type="button">i
+        <span class="visually-hidden">Допллнительная подробная информация:</span>
+        <span class="delivery__order-button-info">Здесь должен быть поясняющий текст, но в макете его нет P.S. Влад как
+          ты?</span>
+      </button>
+      <div class="delivery__order-window">
+        <form class="order__window" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset>
+            <div class="order__window-info-container">
+              <legend class="order__window-name">Доставка под заказ</legend>
+              <div class="delivery__order-container-persinal">
+                <label class="order__window-user-name">Ваше имя:<br>
+                  <input class="order__window-input" type="text" name="user__name" placeholder="Введите имя"><span
+                    class="user__name"></span>
+                </label>
+                <label class="order__window-email">Ваш e-mail:<br>
+                  <input class="order__window-input" type="email" placeholder="*****@mail.ru" required><span
+                    class="user__email"></span>
+                </label>
+              </div>
 
-    <section class="information">
-      <div class="information__us">
+              <div class="delivery__order-container-product">
+                <label class="order__window-comment">Что нужно привезти:<br>
+                  <input class="order__window-input order__user" type="text" name="product-deliver"
+                    placeholder="В свободной форме" required>
+                </label>
+                <label class="order__window-value">Колличество:
+                  <div class="order__window-input-container">
+                    <button type="button" class="order__window-value-button button__stepDown">-</button>
+                    <input class="order__window-input order__volume" type="number" value="1" min="1" step="1">
+                    <button type="button" class="order__window-value-button button__stepUp">+</button>
+                  </div>
+                </label>
+                <button class="order__window-info" type="button">i
+                  <span class="visually-hidden">Дополнительная иинформация:</span>
+                  <div class="order__window-info-text">Постараемся найти, сколько нужно. Привезём сколько получится по
+                    требованиям<br>
+                    к провозу багажа.
+                  </div>
+                </button>
+              </div>
+              <button class="order__window-button" type="submit"><span
+                  class="order__window-button-span">Отправить</span></button>
+              <button class="delivery__order-button-close" type="button">Закрыть</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <div class="information">
+      <section class="information__us">
         <h2 class="information__us-heading">О нас</h2>
         <p class="information__us-text">
           Огромный выбор гаджетов не оставит равнодушным<br>
@@ -305,10 +356,10 @@
           <li class="information__us-delivery-company-item">ТоксБерри</li>
         </ul>
         <p class="information__us-link"><a class="information__us-link-button" href="#">Подробнее о нас</a></p>
-      </div>
+      </section>
 
-      <div class="contact">
-        <h2 class="contact__heading">Контакты</h2>
+      <section class="contact">
+        <h3 class="contact__heading">Контакты</h3>
         <p class="contact__text">
           Вы можете забрать товар сами, заехав в наш офис.<br>
           Заодно сможете проверить работоспособность покупки.
@@ -319,24 +370,24 @@
         <h3 class="contact__heading-time-work">Время работы</h3>
         <p class="contact__text-time-work">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
         <button class="contact__button" type="button"><span class="contact__button-name">Напишите нам</span></button>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <section class="mailing">
       <div class="mailing__header">
-      <h2 class="mailing__heading">Подпишитесь<br>на рассылку</h2>
-      <p class="mailing__text">
-        Еженедельный дайджест с обзорами новинок,<br>
-        длительными тест-драйвами, распаковками, а также акции,<br>
-        спецпредложения и вот это вот всё.
-      </p>
+        <h2 class="mailing__heading">Подпишитесь<br>на рассылку</h2>
+        <p class="mailing__text">
+          Еженедельный дайджест с обзорами новинок,<br>
+          длительными тест-драйвами, распаковками, а также акции,<br>
+          спецпредложения и вот это вот всё.
+        </p>
       </div>
       <div class="mailing__footer">
-      <form class="mailing__subscribe" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="mailing__subscribe-input" type="email" name="mail" value="Ваш e-mail">
-        <input class="mailing__subscribe-button" type="submit" name="mail-buttom" value="Подписаться">
-      </form>
-      <p class="mailing__free">Это бесплатно</p>
+        <form class="mailing__subscribe" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="mailing__subscribe-input" type="email" name="mail" placeholder="Ваш e-mail" required>
+          <button class="mailing__subscribe-button" type="submit" name="mail-buttom">Подписаться</button>
+        </form>
+        <p class="mailing__free">Это бесплатно</p>
       </div>
     </section>
   </main>
@@ -363,7 +414,6 @@
     </div>
 
     <div class="footer__bottom">
-      <img class="footer__bottom-img" alt="Желтая линия" src="images/yellow-line.svg">
       <ul class="footer__bottom-mеssenger">
         <li class="footer__bottom-mеssenger-item">
           <a class="footer__bottom-mеssenger-link facebook" href="https://vk.com/stnkvld">Facebook</a>
@@ -375,34 +425,12 @@
           <a class="footer__bottom-mеssenger-link twitter" href="https://vk.com/stnkvld">Twitter</a>
         </li>
       </ul>
-        <a class="footer__bottom-executor" href="https://htmlacademy.ru">
-          html.academy
-        </a>
+      <a class="footer__bottom-executor" href="https://htmlacademy.ru">
+        html.academy
+      </a>
       </p>
     </div>
   </footer>
 </body>
-
-
-<section class="delivery__window">
-  <h2 class="delivery__window-heading">Доставка под заказ</h2>
-  <form class="delivery__window-post" action="https://echo.htmlacademy.ru/" method="post">
-    <label class="delivery__window-login">Ваше имя:
-      <input type="text" name="delivery__login" value="Введите имя">
-    </label>
-    <label class="delivery__window-mail">Ваш e-mail:
-      <input type="email" name="delivery__email" value="***.@***.ru">
-    </label>
-    <label class="delivery__window-product">Что нужно привезити:
-      <textarea type="text" name="delivery__products" cols="40" rows="3">В свободной форме</textarea>
-    </label>
-    <label class="delivery__window-product-sum">
-      <input class="delivery__window-product-sum-input" type="number" name="delicery-products-sum" size="3" name="num"
-        min="1" max="999" value="1">
-    </label>
-    <input class="delivery__window-button" type="submit" value="Отправить">
-    </from>
-    <button class="delivery__window-close" type="button">Закрыть</button>
-</section>
 
 </html>
