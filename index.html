@@ -33,7 +33,7 @@
     <div class="header__cup">
       <h1 class="visually-hidden">Магазин умной техники device</h1>
       <a class="header__logo-link" href="#">
-        <img class="header__logo-img" src="images/logo.svg" alt="Логотип магазина" heigth="36" width="145" id="logo">
+        <img class="header__logo-img" src="images/logo.svg" alt="Логотип магазина" width="145" heigth="36" id="logo">
       </a>
       <div class="header__cup-container">
         <form class="search" action="https://echo.htmlacademy.ru/" method="post">
@@ -209,7 +209,7 @@
         <li class="navigation__item">
           <a class="navigation__link" href="catalog.html">
             <img class="navigation__link-img monopod-vector-img" src="images/monopod.png"
-              alt="Селфи палка с телефоном закрепленным на ней" width="85.6" height="117">
+              alt="Селфи палка с телефоном закрепленным на ней" width="86" height="117">
             <span class="navigation__link-text">Моноподы<br>для селфи</span>
           </a>
         </li>
@@ -288,6 +288,7 @@
     </section>
 
     <section class="delivery__order">
+      <h2 class="visually-hidden">Доставка товара</h2>
       <a class="delivery__order-link" href="#">Доставим редкий товар под заказ</a>
       <button class="delivery__order-button" type="button">i
         <span class="visually-hidden">Допллнительная подробная информация:</span>
@@ -298,7 +299,7 @@
         <form class="order__window" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset>
             <div class="order__window-info-container">
-              <legend class="order__window-name">Доставка под заказ</legend>
+              <h2 class="order__window-name">Доставка под заказ</h2>
               <div class="delivery__order-container-persinal">
                 <label class="order__window-user-name">Ваше имя:<br>
                   <input class="order__window-input" type="text" name="user__name" placeholder="Введите имя"><span
@@ -315,20 +316,20 @@
                   <input class="order__window-input order__user" type="text" name="product-deliver"
                     placeholder="В свободной форме" required>
                 </label>
-                <label class="order__window-value">Колличество:
-                  <div class="order__window-input-container">
-                    <button type="button" class="order__window-value-button button__stepDown">-</button>
-                    <input class="order__window-input order__volume" type="number" value="1" min="1" step="1">
-                    <button type="button" class="order__window-value-button button__stepUp">+</button>
+                <label class="order__window-value" for="order__volume">Колличество:</label>
+                  <div class="order__window-value-container">
+                <button type="button" class="order__window-value-button button__stepDown">-</button>
+                <input class="order__window-input order__volume" type="number" value="1" min="1" step="1" id="order__volume">
+                <button type="button" class="order__window-value-button button__stepUp">+</button>
                   </div>
-                </label>
                 <button class="order__window-info" type="button">i
                   <span class="visually-hidden">Дополнительная иинформация:</span>
-                  <div class="order__window-info-text">Постараемся найти, сколько нужно. Привезём сколько получится по
+                  <span class="order__window-info-text">Постараемся найти, сколько нужно. Привезём сколько получится по
                     требованиям<br>
                     к провозу багажа.
-                  </div>
+                  </span>
                 </button>
+
               </div>
               <button class="order__window-button" type="submit"><span
                   class="order__window-button-span">Отправить</span></button>
@@ -426,9 +427,7 @@
         </li>
       </ul>
       <a class="footer__bottom-executor" href="https://htmlacademy.ru">
-        html.academy
-      </a>
-      </p>
+        html.academy</a>
     </div>
   </footer>
 </body>

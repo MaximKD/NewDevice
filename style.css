@@ -1376,6 +1376,13 @@
   position: relative;
 }
 
+.order__window-value-container {
+  position: absolute;
+  top: 54%;
+  left: 77%;
+  transform: translate(-5px, -1px);
+}
+
 .order__window-info {
 position: absolute;
 height: 26px;
@@ -1425,15 +1432,11 @@ cursor: pointer;
 }
 
 .order__window-info:hover .order__window-info-text {
-  display: block;
+  display: inline-block;
 }
 
 .order__window-info:focus .order__window-info-text {
   display: block;
-}
-
-
-.order__window-input-container {
   position: relative;
   width: 180px;
   height: 60px;
