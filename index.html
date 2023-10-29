@@ -197,7 +197,7 @@
     </section>
 
     <nav class="navigation">
-      <h2 class="visually-hidden">Нас ассортимент</h2>
+      <h2 class="visually-hidden">Наш ассортимент</h2>
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link" href="#">
@@ -246,12 +246,12 @@
     <section class="service">
       <h2 class="visually-hidden">Сервисы</h2>
       <div class="service__container-button">
-        <button class="service__button button__delivery" type="button"><span
-            class="service__button-name">Доставка</span></button>
-        <button class="service__button button__guarante" type="button"><span
-            class="service__button-name">Гарантия</span></button>
-        <button class="service__button button__credit" type="button"><span
-            class="service__button-name">Кредит</span></button>
+        <input class="service__button-input" type="radio" name="service" id="service__delivery-radio" checked>
+        <label class="service__button" for="service__delivery-radio">Доставка</label>
+        <input class="service__button-input" type="radio" name="service" id="service__guarante-radio">
+        <label class="service__button" for="service__guarante-radio">Гарантия</label>
+        <input class="service__button-input" type="radio" name="service" id="service__credit-radio">
+        <label class="service__button" for="service__credit-radio">Кредит</label>
       </div>
 
       <div class="service__container-text">
@@ -317,11 +317,12 @@
                     placeholder="В свободной форме" required>
                 </label>
                 <label class="order__window-value" for="order__volume">Колличество:</label>
-                  <div class="order__window-value-container">
-                <button type="button" class="order__window-value-button button__stepDown">-</button>
-                <input class="order__window-input order__volume" type="number" value="1" min="1" step="1" id="order__volume">
-                <button type="button" class="order__window-value-button button__stepUp">+</button>
-                  </div>
+                <div class="order__window-value-container">
+                  <button type="button" class="order__window-value-button button__stepDown">-</button>
+                  <input class="order__window-input order__volume" type="number" value="1" min="1" step="1"
+                    id="order__volume">
+                  <button type="button" class="order__window-value-button button__stepUp">+</button>
+                </div>
                 <button class="order__window-info" type="button">i
                   <span class="visually-hidden">Дополнительная иинформация:</span>
                   <span class="order__window-info-text">Постараемся найти, сколько нужно. Привезём сколько получится по
@@ -356,7 +357,9 @@
           <li class="information__us-delivery-company-item">СДИК</li>
           <li class="information__us-delivery-company-item">ТоксБерри</li>
         </ul>
-        <p class="information__us-link"><a class="information__us-link-button" href="#">Подробнее о нас</a></p>
+        <p class="information__us-link">
+          <a class="information__us-link-button" href="#">Подробнее о нас</a>
+        </p>
       </section>
 
       <section class="contact">
@@ -370,7 +373,7 @@
         <a class="contact__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <h3 class="contact__heading-time-work">Время работы</h3>
         <p class="contact__text-time-work">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
-        <button class="contact__button" type="button"><span class="contact__button-name">Напишите нам</span></button>
+        <button class="contact__button" type="button">Напишите нам</button>
       </section>
     </div>
 
@@ -417,13 +420,13 @@
     <div class="footer__bottom">
       <ul class="footer__bottom-mеssenger">
         <li class="footer__bottom-mеssenger-item">
-          <a class="footer__bottom-mеssenger-link facebook" href="https://vk.com/stnkvld">Facebook</a>
+          <a class="facebook" href="https://vk.com/stnkvld" title="Facebook"></a>
         </li>
         <li class="footer__bottom-mеssenger-item">
-          <a class="footer__bottom-mеssenger-link instagrem" href="https://vk.com/stnkvld">Insagram</a>
+          <a class="instagrem" href="https://vk.com/stnkvld" title="Insagram"></a>
         </li>
         <li class="footer__bottom-mеssenger-item">
-          <a class="footer__bottom-mеssenger-link twitter" href="https://vk.com/stnkvld">Twitter</a>
+          <a class="twitter" href="https://vk.com/stnkvld" title="Twitter"></a>
         </li>
       </ul>
       <a class="footer__bottom-executor" href="https://htmlacademy.ru">

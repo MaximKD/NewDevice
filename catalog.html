@@ -127,7 +127,7 @@
           <fieldset class="filter__catalog">
             <legend class="filter__price">Стоимость:</legend>
               <div class="scale">
-                <div class="scale__range" style="left: 0px; width: 66%;">
+                <div class="scale__range" style="left: 0px; right: 66px;">
                   <button class="scale__range-toggle toggle-min">
                     <span class="visually-hidden">Уменьшить цену</span>
                   </button>
@@ -136,12 +136,12 @@
                   </button>
                 </div>
                 <div class="filter__price-input">
-                  <label class="filter__price-label"> от
+                  <label class="filter__price-label" style="left: 0px;"> от
                     <input class="price__range-input" type="number" value="0" name="min-price"
-                    style="width: 15px;"> &#8381;
+                    style="width: 15px;">
                   </label>
-                  <label class="filter__price-label"> до
-                   <input class="price__range-input" type="number" value="5000" name="max-price" style="width: 40px;"> &#8381;
+                  <label class="filter__price-label" style="right: 36px;"> до
+                   <input class="price__range-input" type="number" value="5000" name="max-price" style="width: 40px;">
                   </label>
                 </div>
               </div>
@@ -204,35 +204,31 @@
         </div>
         <div class="catalogue__main">
           <article class="product">
-            <h2 class="visually-hidden">Карточка товара</h2>
+            <h2 class="product__name">Любительская селфи-палка</h2>
             <img class="product__pic" src="images/product1.png" width="360" height="380"
               alt="Селифи палка с закрепленном на ней телефоном">
             <a class="product__link" href="#">Подробнее</a>
-            <p class="product__name">Любительская<br>селфи-палка</p>
             <p class="product__price">500 &#8381;</p>
           </article>
           <article class="product">
-            <h2 class="visually-hidden">Карточка товара</h2>
+            <h2 class="product__name">Профессиональная селфи-палка</h2>
             <img class="product__pic" src="images/product-2.png" width="360" height="380"
               alt="Селифи палка с в сложенном состоянии и синей кнопкой">
             <a class="product__link" href="#">Подробнее</a>
-            <p class="product__name">Профессиональная<br>селфи-палка</p>
             <p class="product__price">1 500 &#8381;</p>
           </article>
           <article class="product">
-            <h2 class="visually-hidden">Карточка товара</h2>
+            <h2 class="product__name">Непотопляемая селфи-палка</h2>
             <img class="product__pic" src="images/product-3.png" width="360" height="380"
               alt="Короткая селифи палка, с толстой прорезиненной рукояткой желтого цыета и закрепленной на ней камерой">
             <a class="product__link" href="#">Подробнее</a>
-            <p class="product__name">Непотопляемая<br>селфи-палка</p>
             <p class="product__price">2 500 &#8381;</p>
           </article>
           <article class="product new">
-            <h2 class="visually-hidden">Карточка товара</h2>
+            <h2 class="product__name">Селифи-палка &laquo;Следуй за мной&raquo;</h2>
             <img class="product__pic" src="images/product-4.png" width="360" height="380"
               alt="Селифи палка в виде человеческой руки">
             <a class="product__link" href="#">Подробнее</a>
-            <p class="product__name">Селифи-палка &laquo;Следуй за<br>мной&raquo;</p>
             <p class="product__price">1 500 &#8381;</p>
           </article>
           <button class="catalogue__download-button" type="button">Загрузить еще</button>
@@ -286,13 +282,13 @@
     <div class="footer__bottom">
       <ul class="footer__bottom-mеssenger">
         <li class="footer__bottom-mеssenger-item">
-          <a class="footer__bottom-mеssenger-link facebook" href="https://vk.com/stnkvld">Facebook</a>
+          <a class="facebook" href="https://vk.com/stnkvld" title="Facebook"></a>
         </li>
         <li class="footer__bottom-mеssenger-item">
-          <a class="footer__bottom-mеssenger-link instagrem" href="https://vk.com/stnkvld">Insagram</a>
+          <a class="instagrem" href="https://vk.com/stnkvld" title="Insagram"></a>
         </li>
         <li class="footer__bottom-mеssenger-item">
-          <a class="footer__bottom-mеssenger-link twitter" href="https://vk.com/stnkvld">Twitter</a>
+          <a class="twitter" href="https://vk.com/stnkvld" title="Twitter"></a>
         </li>
       </ul>
       <a class="footer__bottom-executor" href="https://htmlacademy.ru">
